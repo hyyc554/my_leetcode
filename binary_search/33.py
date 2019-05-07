@@ -41,3 +41,9 @@ if __name__ == '__main__':
     target = 3
     b =a.search(nums,target)
     print(b)
+
+
+    def get_most_similar_fast(self, v):
+        scores = self.normed(v) @ self.embs._normalized_matrix.T
+        scores = (scores + 1) / 2
+        return scores
