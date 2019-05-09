@@ -13,7 +13,7 @@ class Solution:
 
     def isSymeetric(self, root):
         """
-        递归法
+        递归法，添加注释
         """
         if root is None:
             return True
