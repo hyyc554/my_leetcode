@@ -24,4 +24,6 @@ class Solution:
 
 if __name__ == "__main__":
     a = Solution()
-    print(a.generateParenthesis(3))
+    print(a.generateParenthesis(10))
+    a=[set()]
+
