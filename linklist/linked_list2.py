@@ -73,7 +73,7 @@ class SingleLinkList():
         """
         cur = self._head
         while cur is not None:
-            print(cur.elem, end=' ')
+            print(cur.val, end=' ')
             cur = cur.next
 
     def add_at_head(self, val: int) -> None:
@@ -178,5 +178,5 @@ if __name__ == '__main__':
     obj.add_at_tail(3)
     obj.add_at_index(1, 2)
     obj.travel()
-    obj.delete_at_index(1)
-    obj.travel()
+    # obj.delete_at_index(1)
+    # obj.travel()
