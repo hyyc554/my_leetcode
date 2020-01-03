@@ -38,7 +38,15 @@ def reverse_loop(head):
         pre = head  # 作为下次迭代时的（当前节点的）向前指针
         head = next  # 作为下次迭代时的（当前）节点
     return pre  # 返回头指针，头指针就是迭代到最后一次时的head变量（赋值给了pre）
-
+def reverseList(self, head):
+    """
+    :type head: ListNode
+    :rtype: ListNode
+    """
+    cur, prev = head, None
+    while cur:
+        cur.next, prev, cur = prev, cur, cur.next
+    return prev
 
 def reverse_recursion(head):
     """
