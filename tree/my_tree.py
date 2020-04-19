@@ -57,8 +57,9 @@ class Tree(object):
                 return
             else:
                 queue.append(cur_node.right)
-if __name__ == '__main__':
 
+
+if __name__ == '__main__':
     my_tree = Tree()
     my_tree.add(1)
     my_tree.add(2)
