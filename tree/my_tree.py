@@ -63,3 +63,4 @@ if __name__ == '__main__':
     my_tree = Tree()
     my_tree.add(1)
     my_tree.add(2)
+    my_tree.add(3)
